@@ -1,0 +1,9 @@
+<odoo>
+
+  <!-- actions -->
+  <menuitem name="Aula" id="aula_menu" parent="upoCocina.upoCocina_menu" groups="group_upoCocina_manager" action="aula_list_action"/>
+  <menuitem name="Clase" id="clase_menu" parent="upoCocina.upoCocina_menu" groups="group_upoCocina_manager" action="clase_list_action"/>
+  <menuitem name="Puesto" id="puesto_menu" parent="upoCocina.upoCocina_menu" groups="group_upoCocina_manager" action="puesto_list_action"/>
+  <menuitem name="Utensilio" id="utensilio_menu" parent="upoCocina.upoCocina_menu" groups="group_upoCocina_manager" action="utensilio_list_action"/>
+
+</odoo>
