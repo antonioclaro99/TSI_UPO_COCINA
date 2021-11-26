@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-clases_manager,clases_manager,model_UPOCOCINA_clases:UPOCOCINA_clases,group_UPOCOCINA_manager,1,1,1,1
-aulas_manager,aulas_manager,model_UPOCOCINA_aulas,group_UPOCOCINA_manager,1,1,1,1
-puestos_manager,puestos_manager,model_UPOCOCINA_puestos,group_UPOCOCINA_manager,1,1,1,1
-utensilios_manager,utensilios_manager,model_UPOCOCINA_utensilios,group_UPOCOCINA_manager,1,1,1,1
