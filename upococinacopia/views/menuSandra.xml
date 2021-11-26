@@ -1,0 +1,14 @@
+<odoo>
+   <!-- Top menu item -->
+  <menuitem name="upococinacopia" id="main_upococinacopia_menu" groups="group_upococinacopia_manager"/>
+
+  <!-- menu categories -->
+  <menuitem name="upococinacopia" id="upococinacopia_menu" groups="group_upococinacopia_manager" parent="main_upococinacopia_menu"/>
+
+  <!-- actions -->
+  <menuitem name="Aulas" id="aulas_menu" parent="upococinacopia_menu" groups="group_upococinacopia_manager" action="aulas_list_action"/>
+  <menuitem name="Clases" id="clases_menu" parent="upococinacopia_menu" groups="group_upococinacopia_manager" action="clases_list_action"/>
+  <menuitem name="Puestos" id="puestos_menu" parent="upococinacopia_menu" groups="group_upococinacopia_manager" action="puestos_list_action"/>
+  <menuitem name="Utensilios" id="utensilios_menu" parent="upococinacopia_menu" groups="group_upococinacopia_manager" action="utensilios_list_action"/>
+
+</odoo>
