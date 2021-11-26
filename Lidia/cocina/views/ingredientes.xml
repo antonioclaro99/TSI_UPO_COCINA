@@ -1,0 +1,40 @@
+<odoo>
+    <record id="cocina_ingredientes_form_view" model="ir.ui.view">
+        <field name="name">cocina.ingredientes.form</field>
+        <field name="model">cocina.ingredientes</field>
+        <field name="arch" type="xml">
+            <form string="ingredientes">
+                <sheet layout="auto">
+                    <group>
+                        <field name="nombre" />
+                        <field name="precio" />
+                        <field name="alergeno" />
+                        <field name="recetas_ids" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="cocina_ingredientes_tree_view" model="ir.ui.view">
+        <field name="name">cocina.ingredientes.tree</field>
+        <field name="model">cocina.ingredientes</field>
+        <field name="arch" type="xml">
+            <tree string="tree_string">
+                <field name="nombre" />
+                <field name="precio" />
+                <field name="alergeno" />
+                <field name="recetas_ids" widget="many2many" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="ingredientes_list_action" model="ir.actions.act_window">
+        <field name="name">ingredientes</field>
+        <field name="res_model">cocina.ingredientes</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first clase</p>
+        </field>
+    </record>
+</odoo>

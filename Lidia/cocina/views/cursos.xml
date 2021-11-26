@@ -1,0 +1,47 @@
+<odoo>
+  <record id="cocina_cursos_form_view" model="ir.ui.view">
+    <field name="name">cocina.cursos.form</field>
+    <field name="model">cocina.cursos</field>
+    <field name="arch" type="xml">
+      <form string="Cursos">
+        <sheet layout="auto">
+          <group>
+          
+            <field name="nombre" />
+            <field name="fechaInicio" />
+            <field name="fechaFin" />
+            <field name="recetas_ids" />
+            
+            
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="cocina_cursos_tree_view" model="ir.ui.view">
+    <field name="name">cocina.cursos.tree</field>
+    <field name="model">cocina.cursos</field>
+    <field name="arch" type="xml">
+      <tree string="tree_string">
+      
+         <field name="nombre" />
+         <field name="fechaInicio" />
+         <field name="fechaFin" />
+         <field name="recetas_ids" widget="many2many" />
+         <!--
+         <field name="chef_id" widget="many2one" />
+         <field name="alumnos_ids" widget="many2many" />-->
+      </tree>
+    </field>
+  </record>
+
+  <record id="cursos_list_action" model="ir.actions.act_window">
+    <field name="name">cursos</field>
+    <field name="res_model">cocina.cursos</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Create the first clase</p>
+    </field>
+  </record>
+</odoo>
