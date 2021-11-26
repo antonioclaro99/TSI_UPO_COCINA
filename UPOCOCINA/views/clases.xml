@@ -1,9 +1,9 @@
 <odoo>
-  <record id="upoCocina_clase_form_view" model="ir.ui.view">
-    <field name="name">upoCocina.clase.form</field>
-    <field name="model">upoCocina.clase</field>
+  <record id="UPOCOCINA_clases_form_view" model="ir.ui.view">
+    <field name="name">UPOCOCINA.clases.form</field>
+    <field name="model">UPOCOCINA.clases</field>
     <field name="arch" type="xml">
-      <form string="Clase">
+      <form string="Clases">
         <sheet layout="auto">
           <group>
             <field name="nombreClase" />
@@ -16,9 +16,9 @@
     </field>
   </record>
 
-  <record id="upoCocina_clase_tree_view" model="ir.ui.view">
-    <field name="name">upoCocina.clase.tree</field>
-    <field name="model">upoCocina.clase</field>
+  <record id="UPOCOCINA_clases_tree_view" model="ir.ui.view">
+    <field name="name">UPOCOCINA.clases.tree</field>
+    <field name="model">UPOCOCINA.clases</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
          <field name="nombreClase" />
@@ -29,9 +29,9 @@
     </field>
   </record>
 
-  <record id="clase_list_action" model="ir.actions.act_window">
-    <field name="name">Clase</field>
-    <field name="res_model">upoCocina.clase</field>
+  <record id="clases_list_action" model="ir.actions.act_window">
+    <field name="name">Clases</field>
+    <field name="res_model">UPOCOCINA.clases</field>
     <field name="view_mode">tree,form</field>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Create the first clase</p>

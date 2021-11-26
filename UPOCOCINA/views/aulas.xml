@@ -1,9 +1,9 @@
 <odoo>
-  <record id="upoCocina_aula_form_view" model="ir.ui.view">
-    <field name="name">upoCocina.aula.form</field>
-    <field name="model">upoCocina.aula</field>
+  <record id="UPOCOCINA_aulas_form_view" model="ir.ui.view">
+    <field name="name">UPOCOCINA.aulas.form</field>
+    <field name="model">UPOCOCINA.aulas</field>
     <field name="arch" type="xml">
-      <form string="Aula">
+      <form string="Aulas">
         <sheet layout="auto">
           <group>
             <field name="nAula" />
@@ -15,9 +15,9 @@
     </field>
   </record>
 
-  <record id="upoCocina_aula_tree_view" model="ir.ui.view">
-    <field name="name">upoCocina.aula.tree</field>
-    <field name="model">upoCocina.aula</field>
+  <record id="UPOCOCINA_aulas_tree_view" model="ir.ui.view">
+    <field name="name">UPOCOCINA.aulas.tree</field>
+    <field name="model">UPOCOCINA.aulas</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
          <field name="nAula" />
@@ -27,9 +27,9 @@
     </field>
   </record>
 
-  <record id="aula_list_action" model="ir.actions.act_window">
-    <field name="name">Aula</field>
-    <field name="res_model">upoCocina.aula</field>
+  <record id="aulas_list_action" model="ir.actions.act_window">
+    <field name="name">Aulas</field>
+    <field name="res_model">UPOCOCINA.aulas</field>
     <field name="view_mode">tree,form</field>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Create the first aula</p>

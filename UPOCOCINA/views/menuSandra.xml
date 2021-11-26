@@ -1,9 +1,14 @@
 <odoo>
+   <!-- Top menu item -->
+  <menuitem name="UPOCOCINA" id="main_UPOCOCINA_menu" groups="group_UPOCOCINA_manager"/>
+
+  <!-- menu categories -->
+  <menuitem name="UPOCOCINA" id="UPOCOCINA_menu" groups="group_UPOCOCINA_manager" parent="main_UPOCOCINA_menu"/>
 
   <!-- actions -->
-  <menuitem name="Aula" id="aula_menu" parent="upoCocina.upoCocina_menu" groups="group_upoCocina_manager" action="aula_list_action"/>
-  <menuitem name="Clase" id="clase_menu" parent="upoCocina.upoCocina_menu" groups="group_upoCocina_manager" action="clase_list_action"/>
-  <menuitem name="Puesto" id="puesto_menu" parent="upoCocina.upoCocina_menu" groups="group_upoCocina_manager" action="puesto_list_action"/>
-  <menuitem name="Utensilio" id="utensilio_menu" parent="upoCocina.upoCocina_menu" groups="group_upoCocina_manager" action="utensilio_list_action"/>
+  <menuitem name="Aulas" id="aulas_menu" parent="UPOCOCINA_menu" groups="group_UPOCOCINA_manager" action="aulas_list_action"/>
+  <menuitem name="Clases" id="clases_menu" parent="UPOCOCINA_menu" groups="group_UPOCOCINA_manager" action="clases_list_action"/>
+  <menuitem name="Puestos" id="puestos_menu" parent="UPOCOCINA_menu" groups="group_UPOCOCINA_manager" action="puestos_list_action"/>
+  <menuitem name="Utensilios" id="utensilios_menu" parent="UPOCOCINA_menu" groups="group_UPOCOCINA_manager" action="utensilios_list_action"/>
 
 </odoo>

@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "gym",
+    'name': "UPOCOCINA",
 
     'summary': """
-        Sumario del modulo GYM""",
+        Sumario del modulo UPOCOCINA""",
 
     'description': """
-        Descripcion del modulo GYM
+        Descripcion del modulo UPOCOCINA
     """,
 
     'author': "TSI - UPO",
@@ -24,11 +24,17 @@
     # always loaded
     'data': [
         'security/security.xml',
-        'security/ir.model.access.csv',
+        #'security/ir.model.access.csv',
         'views/classes_views.xml',
         'views/users_view.xml',
         'views/instructores_view.xml',
+        'views/clases.xml',
+        'views/aulas.xml',
+        'views/puestos.xml',
+        'views/utensilios.xml',
         'views/menu.xml',
+        'views/menuSandra.xml',
+
     ],
     # only loaded in demonstration mode
     'demo': [

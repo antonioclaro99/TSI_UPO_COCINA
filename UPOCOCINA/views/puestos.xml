@@ -1,9 +1,9 @@
 <odoo>
-  <record id="upoCocina_puesto_form_view" model="ir.ui.view">
-    <field name="name">upoCocina.puesto.form</field>
-    <field name="model">upoCocina.puesto</field>
+  <record id="UPOCOCINA_puestos_form_view" model="ir.ui.view">
+    <field name="name">UPOCOCINA.puestos.form</field>
+    <field name="model">UPOCOCINA.puestos</field>
     <field name="arch" type="xml">
-      <form string="Puesto">
+      <form string="Puestos">
         <sheet layout="auto">
           <group>
             <field name="nPuesto" />
@@ -15,9 +15,9 @@
     </field>
   </record>
 
-  <record id="upoCocina_puesto_tree_view" model="ir.ui.view">
-    <field name="name">upoCocina.puesto.tree</field>
-    <field name="model">upoCocina.puesto</field>
+  <record id="UPOCOCINA_puestos_tree_view" model="ir.ui.view">
+    <field name="name">UPOCOCINA.puestos.tree</field>
+    <field name="model">UPOCOCINA.puestos</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
          <field name="nPuesto" />
@@ -28,8 +28,8 @@
   </record>
 
   <record id="puesto_list_action" model="ir.actions.act_window">
-    <field name="name">Puesto</field>
-    <field name="res_model">upoCocina.puesto</field>
+    <field name="name">Puestos</field>
+    <field name="res_model">UPOCOCINA.puestos</field>
     <field name="view_mode">tree,form</field>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Create the first puesto</p>

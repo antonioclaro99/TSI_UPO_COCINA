@@ -1,9 +1,9 @@
 <odoo>
-  <record id="upoCocina_utensilio_form_view" model="ir.ui.view">
-    <field name="name">upoCocina.utensilio.form</field>
-    <field name="model">upoCocina.utensilio</field>
+  <record id="UPOCOCINA_utensilios_form_view" model="ir.ui.view">
+    <field name="name">UPOCOCINA.utensilios.form</field>
+    <field name="model">UPOCOCINA.utensilios</field>
     <field name="arch" type="xml">
-      <form string="Utensilio">
+      <form string="Utensilios">
         <sheet layout="auto">
           <group>
             <field name="id" />
@@ -15,9 +15,9 @@
     </field>
   </record>
 
-  <record id="upoCocina_utensilio_tree_view" model="ir.ui.view">
-    <field name="name">upoCocina.utensilio.tree</field>
-    <field name="model">upoCocina.utensilio</field>
+  <record id="UPOCOCINA_utensilios_tree_view" model="ir.ui.view">
+    <field name="name">UPOCOCINA.utensilios.tree</field>
+    <field name="model">UPOCOCINA.utensilios</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
          <field name="id" />
@@ -27,9 +27,9 @@
     </field>
   </record>
 
-  <record id="utensilio_list_action" model="ir.actions.act_window">
-    <field name="name">Utensilio</field>
-    <field name="res_model">upoCocina.utensilio</field>
+  <record id="utensilios_list_action" model="ir.actions.act_window">
+    <field name="name">Utensilios</field>
+    <field name="res_model">UPOCOCINA.utensilios</field>
     <field name="view_mode">tree,form</field>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Create the first utensilio</p>
