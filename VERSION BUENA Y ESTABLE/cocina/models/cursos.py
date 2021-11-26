@@ -11,3 +11,4 @@ class Cursos(models.Model):
 
      fechaInicio = fields.Datetime('Fecha inicio', help="Fecha de inicio de nuestro curso")
      fechaFin = fields.Datetime('Fecha fin', help="Fecha de finalizacion de nuestro curso")
+     recetas_ids = fields.Many2many("cocina.recetas", string="Lista de recetas")

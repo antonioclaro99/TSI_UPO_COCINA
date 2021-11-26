@@ -10,6 +10,7 @@
             <field name="nombre" />
             <field name="fechaInicio" />
             <field name="fechaFin" />
+            <field name="recetas_ids" />
             
             
           </group>
@@ -27,6 +28,7 @@
          <field name="nombre" />
          <field name="fechaInicio" />
          <field name="fechaFin" />
+         <field name="recetas_ids" widget="many2many" />
          <!--
          <field name="chef_id" widget="many2one" />
          <field name="alumnos_ids" widget="many2many" />-->

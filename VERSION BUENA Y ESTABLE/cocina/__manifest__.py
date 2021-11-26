@@ -30,6 +30,8 @@
         'views/clases.xml',
         'views/aulas.xml',
         'views/cursos.xml',
+        'views/recetas.xml',
+        'views/ingredientes.xml',
         'views/menu.xml',
     ],
     # only loaded in demonstration mode
