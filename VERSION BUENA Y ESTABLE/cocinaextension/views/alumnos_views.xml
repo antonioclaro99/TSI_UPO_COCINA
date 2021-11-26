@@ -1,0 +1,46 @@
+<odoo>
+  <record id="cocinaextension_alumnos_form_view" model="ir.ui.view">
+    <field name="name">cocinaextension.alumnos.form</field>
+    <field name="model">cocinaextension.alumnos</field>
+    <field name="arch" type="xml">
+      <form string="Alumnos">
+        <sheet layout="auto">
+          <group>
+            <field name="nombre" />
+            <field name="apellidos" />
+            <field name="dni" />
+            <field name="email" />
+            <field name="telefono" />
+            <field name="descuento"/>
+            <field name="cursos_ids" widget="many2many" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="cocinaextension_alumnos_tree_view" model="ir.ui.view">
+    <field name="name">cocinaextension.alumnos.tree</field>
+    <field name="model">cocinaextension.alumnos</field>
+    <field name="arch" type="xml">
+      <tree string="tree_string">
+        <field name="nombre" />
+        <field name="apellidos" />
+        <field name="dni" />
+        <field name="email" />
+        <field name="telefono" />
+        <field name="descuento"/>
+        <field name="cursos_ids" widget="many2many" />
+      </tree>
+    </field>
+  </record>
+
+  <record id="alumnos_list_action" model="ir.actions.act_window">
+    <field name="name">alumnos</field>
+    <field name="res_model">cocinaextension.alumnos</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Crea el primer alumno</p>
+    </field>
+  </record>
+</odoo>

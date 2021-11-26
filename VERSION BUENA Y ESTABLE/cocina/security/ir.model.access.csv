@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+personas_manager,personas_manager,model_cocina_personas,group_cocina_manager,1,1,1,1
+clases_manager,clases_manager,model_cocina_clases,group_cocina_manager,1,1,1,1
+aulas_manager,aulas_manager,model_cocina_aulas,group_cocina_manager,1,1,1,1
+cursos_manager,cursos_manager,model_cocina_cursos,group_cocina_manager,1,1,1,1
