@@ -9,7 +9,6 @@
                         <field name="nombre" />
                         <field name="precio" />
                         <field name="alergeno" />
-                        <field name="recetas_ids" />
                     </group>
                 </sheet>
             </form>
@@ -24,7 +23,6 @@
                 <field name="nombre" />
                 <field name="precio" />
                 <field name="alergeno" />
-                <field name="recetas_ids" widget="many2many" />
             </tree>
         </field>
     </record>

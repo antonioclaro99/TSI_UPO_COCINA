@@ -10,6 +10,7 @@
             <field name="fechaInicio" />
             <field name="fechaFin" />
             <field name="aula_ids" widget="many2one" />
+            <field name="cursos_ids" widget="many2one" />
           </group>
         </sheet>
       </form>
@@ -25,14 +26,25 @@
          <field name="fechaInicio" />
          <field name="fechaFin" />
          <field name="aula_ids" widget="many2one" />
+         <field name="cursos_ids" widget="many2one" />
       </tree>
+    </field>
+  </record>
+
+  <record id="cocina_clases_calendar_view" model="ir.ui.view">
+    <field name="name">cocina.clases.calendar</field>
+    <field name="model">cocina.clases</field>
+    <field name="arch" type="xml">
+      <calendar string="Clases" color="cursos_ids" date_start="fechaInicio" date_stop="fechaFin" mode="month">
+        <field name="nombreClase" />
+      </calendar>
     </field>
   </record>
 
   <record id="clases_list_action" model="ir.actions.act_window">
     <field name="name">Clases</field>
     <field name="res_model">cocina.clases</field>
-    <field name="view_mode">tree,form</field>
+    <field name="view_mode">tree,form,calendar</field>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Create the first clase</p>
     </field>

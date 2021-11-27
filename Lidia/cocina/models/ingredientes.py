@@ -14,4 +14,6 @@ class Ingredientes(models.Model):
                                   ('huevo','Huevo'),
                                   ('frutossecos','Frutos Secos'),
                                   ('marisco','Marisco')], 'Alergeno')
-    recetas_ids = fields.Many2many("cocina.recetas", string="Lista de recetas donde usamos este ingrediente")
+
+    _sql_constraints = [('ingredientes_nombre_unique','UNIQUE (nombre)','El nombre debe ser único')]
+    

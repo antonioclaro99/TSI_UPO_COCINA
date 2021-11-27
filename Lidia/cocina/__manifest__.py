@@ -32,6 +32,9 @@
         'views/cursos.xml',
         'views/recetas.xml',
         'views/ingredientes.xml',
+        'views/puestos.xml',
+        'views/utensilios.xml',
+        'views/lineaingrediente.xml',
         'views/menu.xml',
     ],
     # only loaded in demonstration mode

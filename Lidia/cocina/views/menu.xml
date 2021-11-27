@@ -6,10 +6,11 @@
   <menuitem name="cocina" id="cocina_menu" groups="group_cocina_manager" parent="main_cocina_menu"/>
 
   <!-- actions -->
-  <menuitem name="Personas" id="personas_menu" parent="cocina_menu" groups="group_cocina_manager" action="personas_list_action"/>
   <menuitem name="Clases" id="clases_menu" parent="cocina_menu" groups="group_cocina_manager" action="clases_list_action"/>
   <menuitem name="Aulas" id="aulas_menu" parent="cocina_menu" groups="group_cocina_manager" action="aulas_list_action"/>
   <menuitem name="Cursos" id="cursos_menu" parent="cocina_menu" groups="group_cocina_manager" action="cursos_list_action"/>
   <menuitem name="Recetas" id="recetas_menu" parent="cocina_menu" groups="group_cocina_manager" action="recetas_list_action"/>
   <menuitem name="Ingredientes" id="ingredientes_menu" parent="cocina_menu" groups="group_cocina_manager" action="ingredientes_list_action"/>
+  <menuitem name="Puestos" id="puestos_menu" parent="cocina_menu" groups="group_cocina_manager" action="puestos_list_action"/>
+  <menuitem name="Utensilios" id="utensilios_menu" parent="cocina_menu" groups="group_cocina_manager" action="utensilios_list_action"/>
 </odoo>

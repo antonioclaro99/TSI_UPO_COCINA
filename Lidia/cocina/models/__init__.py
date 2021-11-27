@@ -6,3 +6,6 @@ from . import aulas
 from . import cursos
 from . import recetas
 from . import ingredientes
+from . import puestos
+from . import utensilios
+from . import lineaingrediente

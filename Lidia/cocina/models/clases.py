@@ -11,4 +11,6 @@ class Clases(models.Model):
     fechaInicio = fields.Datetime("Fecha inicio", required=True, autodate=True)
     fechaFin = fields.Datetime("Fecha fin", required=True, autodate=True)
     aula_ids = fields.Many2one("cocina.aulas", string="Lista de aulas")
-    #cursos_ids= fields.Many2one('cocina.cursos', "Lista de cursos")
+    cursos_ids= fields.Many2one('cocina.cursos', "Lista de cursos")
+    #tema 6.1 pag 23 para hacer la funcion para la fecha onchange
+    
