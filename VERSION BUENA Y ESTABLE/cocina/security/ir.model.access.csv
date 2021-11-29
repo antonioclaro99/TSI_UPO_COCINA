@@ -5,3 +5,6 @@ aulas_manager,aulas_manager,model_cocina_aulas,group_cocina_manager,1,1,1,1
 cursos_manager,cursos_manager,model_cocina_cursos,group_cocina_manager,1,1,1,1
 recetas_manager,recetas_manager,model_cocina_recetas,group_cocina_manager,1,1,1,1
 ingredientes_manager,ingredientes_manager,model_cocina_ingredientes,group_cocina_manager,1,1,1,1
+puestos_manager,puestos_manager,model_cocina_puestos,group_cocina_manager,1,1,1,1
+utensilios_manager,utensilios_manager,model_cocina_utensilios,group_cocina_manager,1,1,1,1
+lineaingrediente_manager,lineaingrediente_manager,model_cocina_lineaingrediente,group_cocina_manager,1,1,1,1

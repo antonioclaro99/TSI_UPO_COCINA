@@ -8,8 +8,10 @@
                     <group>
                         <field name="nombre" />
                         <field name="descripcion" />
-                        <field name="ingredientes_ids" />
-                        <field name="cursos_ids" />
+                        <field name="duracion" />
+                        <field name="lineaingrediente_ids" widget="many2many" />
+                        <field name="precioReceta" />
+                        <field name="cursos_ids" widget="many2many" />
                     </group>
                 </sheet>
             </form>
@@ -23,7 +25,9 @@
             <tree string="tree_string">
                 <field name="nombre" />
                 <field name="descripcion" />
-                <field name="ingredientes_ids" widget="many2many" />
+                <field name="duracion" />
+                <field name="lineaingrediente_ids" widget="many2many" />
+                <field name="precioReceta" />
                 <field name="cursos_ids" widget="many2many" />
             </tree>
         </field>

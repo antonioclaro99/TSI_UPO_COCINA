@@ -3,13 +3,15 @@
         <field name="name">cocina.ingredientes.form</field>
         <field name="model">cocina.ingredientes</field>
         <field name="arch" type="xml">
-            <form string="ingredientes">
+            <form string="Ingredientes">
                 <sheet layout="auto">
                     <group>
                         <field name="nombre" />
                         <field name="precio" />
                         <field name="alergeno" />
-                        <field name="recetas_ids" />
+                        <field name="mensajeStock" />
+                        <button name="btn_stockSi" string="Sí hay stock" type="object" class="oe_highlight" />
+                        <button name="btn_stockNo" string="No hay stock" type="object" class="oe_highlight" />
                     </group>
                 </sheet>
             </form>
@@ -24,13 +26,13 @@
                 <field name="nombre" />
                 <field name="precio" />
                 <field name="alergeno" />
-                <field name="recetas_ids" widget="many2many" />
+                <field name="mensajeStock" />
             </tree>
         </field>
     </record>
 
     <record id="ingredientes_list_action" model="ir.actions.act_window">
-        <field name="name">ingredientes</field>
+        <field name="name">Ingredientes</field>
         <field name="res_model">cocina.ingredientes</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">

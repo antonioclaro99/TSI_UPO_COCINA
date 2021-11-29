@@ -13,6 +13,7 @@
             <field name="telefono" />
             <field name="descuento"/>
             <field name="cursos_ids" widget="many2many" />
+            <field name="precioTotal" />
           </group>
         </sheet>
       </form>
@@ -31,6 +32,7 @@
         <field name="telefono" />
         <field name="descuento"/>
         <field name="cursos_ids" widget="many2many" />
+        <field name="precioTotal" />
       </tree>
     </field>
   </record>

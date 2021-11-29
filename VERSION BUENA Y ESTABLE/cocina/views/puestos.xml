@@ -25,7 +25,7 @@
     </field>
   </record>
 
-  <record id="puesto_list_action" model="ir.actions.act_window">
+  <record id="puestos_list_action" model="ir.actions.act_window">
     <field name="name">Puestos</field>
     <field name="res_model">cocina.puestos</field>
     <field name="view_mode">tree,form</field>

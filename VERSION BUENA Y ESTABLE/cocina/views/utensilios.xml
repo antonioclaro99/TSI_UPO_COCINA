@@ -9,6 +9,7 @@
             <field name="id" />
             <field name="nombre" />
             <field name="descripcion" />
+            <field name="puesto_id" />
           </group>
         </sheet>
       </form>
@@ -23,6 +24,7 @@
          <field name="id" />
          <field name="nombre" />
          <field name="descripcion" />
+         <field name="puesto_id" widget="many2one"/>
       </tree>
     </field>
   </record>

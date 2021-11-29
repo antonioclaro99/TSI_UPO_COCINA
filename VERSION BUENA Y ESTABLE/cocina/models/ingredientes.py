@@ -14,4 +14,21 @@ class Ingredientes(models.Model):
                                   ('huevo','Huevo'),
                                   ('frutossecos','Frutos Secos'),
                                   ('marisco','Marisco')], 'Alergeno')
-    recetas_ids = fields.Many2many("cocina.recetas", string="Lista de recetas donde usamos este ingrediente")
+    stock = fields.Boolean(string="Stockboo")
+    mensajeStock = fields.Char(string="Stock", compute='_compute_stock')
+
+    _sql_constraints = [('ingredientes_nombre_unique','UNIQUE (nombre)','El nombre debe ser único')]
+    
+    def btn_stockSi(self):
+          self.write({'stock':True})
+
+    def btn_stockNo(self):
+          self.write({'stock':False})
+
+    @api.depends('stock')
+    def _compute_stock(self):
+        for linea in self:
+            linea.mensajeStock = "No hay stock disponible"
+            if linea.stock == True:
+                linea.mensajeStock = "Hay stock disponible"
+            
