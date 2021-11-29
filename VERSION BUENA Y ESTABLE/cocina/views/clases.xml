@@ -41,6 +41,20 @@
     </field>
   </record>
 
+  <record id="cocina_clases_search_view" model="ir.ui.view">
+    <field name="name">cocina.clases.search</field>
+    <field name="model">cocina.clases</field>
+    <field name="arch" type="xml">
+      <search>
+        <filter name="search_aula_ids" string="aula_ids > 1" domain="[('aula_ids','>',1)]" />
+        <separator orientation="vertical" />
+        <group expand="0" string="Agrupar por...">
+          <filter name="group_by_cursos_ids" string="cursos_ids" context="{'group_by':'cursos_ids'}" />
+        </group>
+      </search>
+    </field>
+  </record>
+
   <record id="clases_list_action" model="ir.actions.act_window">
     <field name="name">Clases</field>
     <field name="res_model">cocina.clases</field>
