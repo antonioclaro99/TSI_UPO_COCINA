@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+alumnos_manager,alumnos_manager,model_cocinaextension_alumnos,group_cocinaextension_manager,1,1,1,1
+chefs_manager,chefs_manager,model_cocinaextension_chefs,group_cocinaextension_manager,1,1,1,1
