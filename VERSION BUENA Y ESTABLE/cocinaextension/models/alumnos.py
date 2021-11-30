@@ -16,6 +16,7 @@ class Alumnos(models.Model):
     @api.depends('cursos_ids')
     def _compute_precioTotalAlumno(self):
         for alumno in self:
+            alumno.precioTotal=0
             for curso in alumno.cursos_ids:
                 alumno.precioTotal+=curso.precioCurso
             if alumno.descuento == True:

@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class Ingredientes(models.Model):
     _name = 'cocina.ingredientes'
     _description = 'cocina ingredientes'
+    _rec_name='nombre'
 
     nombre = fields.Char(string="Nombre Ingrediente", size=60, required=True, help="Nombre del ingrediente")
     precio = fields.Float(string="Precio", help="Precio del ingrediente")

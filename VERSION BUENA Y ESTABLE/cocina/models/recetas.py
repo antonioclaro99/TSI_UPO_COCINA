@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class Recetas(models.Model):
     _name = 'cocina.recetas'
     _description = 'cocina recetas'
+    _rec_name='nombre'
 
     nombre = fields.Char(string="Nombre Receta", size=60, required=True, help="Nombre de nuestra receta")
     descripcion = fields.Text(string="Descripcion", help="Descripcion de nuestra receta")
