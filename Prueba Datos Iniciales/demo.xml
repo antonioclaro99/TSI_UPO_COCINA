@@ -32,6 +32,110 @@
 
 
 
+          <record id="cocina_clases_1" model="cocina.clases">
+            <field name="nombreClase">Clase 1</field>
+            <field name="aula_ids" eval="ref('cocina_aulas_1')"></field>
+          </record>
+
+          <record id="cocina_clases_2" model="cocina.clases">
+            <field name="nombreClase">Clase 2</field>
+            <field name="aula_ids" eval="ref('cocina_aulas_2')"></field>
+          </record>
+
+          <record id="cocina_clases_3" model="cocina.clases">
+            <field name="nombreClase">Clase 3</field>
+            <field name="aula_ids" eval="ref('cocina_aulas_3')"></field>
+          </record>
+
+          <record id="cocina_clases_4" model="cocina.clases">
+            <field name="nombreClase">Clase 4</field>
+            <field name="aula_ids" eval="ref('cocina_aulas_4')"></field>
+          </record>
+
+          <record id="cocina_clases_5" model="cocina.clases">
+            <field name="nombreClase">Clase 5</field>
+            <field name="aula_ids" eval="ref('cocina_aulas_5')"></field>
+          </record>
+
+          <record id="cocina_clases_6" model="cocina.clases">
+            <field name="nombreClase">Clase 6</field>
+            <field name="aula_ids" eval="ref('cocina_aulas_6')"></field>
+          </record>
+
+
+
+
+          <record id="cocina_utensilios_1" model="cocina.utensilios">
+            <field name="nombre">Cuchillo</field>
+            <field name="descripcion">Cuchillo</field>
+          </record>
+
+          <record id="cocina_utensilios_2" model="cocina.utensilios">
+            <field name="nombre">Cuchara</field>
+            <field name="descripcion">Cuchara</field>
+          </record>
+
+          <record id="cocina_utensilios_3" model="cocina.utensilios">
+            <field name="nombre">Sarten</field>
+            <field name="descripcion">Sarten</field>
+          </record>
+
+          <record id="cocina_utensilios_4" model="cocina.utensilios">
+            <field name="nombre">Tabla</field>
+            <field name="descripcion">Tabla para cortar</field>
+          </record>
+
+          <record id="cocina_utensilios_5" model="cocina.utensilios">
+            <field name="nombre">Fogon</field>
+            <field name="descripcion">Fuego para poner la sarten</field>
+          </record>
+
+          <record id="cocina_utensilios_6" model="cocina.utensilios">
+            <field name="nombre">Paleta</field>
+            <field name="descripcion">Paleta para remover</field>
+          </record>
+
+
+
+
+          <record id="cocina_puestos_1" model="cocina.puestos">
+            <field name="nPuesto">Puesto 1</field>
+            <field name="tipo">1</field>
+            <field name="utensilio_ids" eval="[(6,0, [ref('cocina_utensilios_1') , ref('cocina_utensilios_2')])]"></field>
+          </record>
+
+          <record id="cocina_puestos_2" model="cocina.puestos">
+            <field name="nPuesto">Puesto 2</field>
+            <field name="tipo">2</field>
+            <field name="utensilio_ids" eval="[(6,0, [ref('cocina_utensilios_3') , ref('cocina_utensilios_4')])]"></field>
+          </record>
+
+          <record id="cocina_puestos_3" model="cocina.puestos">
+            <field name="nPuesto">Puesto 3</field>
+            <field name="tipo">3</field>
+            <field name="utensilio_ids" eval="[(6,0, [ref('cocina_utensilios_5') , ref('cocina_utensilios_6')])]"></field>
+          </record>
+
+          <record id="cocina_puestos_4" model="cocina.puestos">
+            <field name="nPuesto">Puesto 4</field>
+            <field name="tipo">4</field>
+            <field name="utensilio_ids" eval="[(6,0, [ref('cocina_utensilios_1') , ref('cocina_utensilios_6')])]"></field>
+          </record>
+
+          <record id="cocina_puestos_5" model="cocina.puestos">
+            <field name="nPuesto">Puesto 5</field>
+            <field name="tipo">5</field>
+            <field name="utensilio_ids" eval="[(6,0, [ref('cocina_utensilios_1') , ref('cocina_utensilios_2') , ref('cocina_utensilios_3') , ref('cocina_utensilios_4')])]"></field>
+          </record>
+
+          <record id="cocina_puestos_6" model="cocina.puestos">
+            <field name="nPuesto">Puesto 6</field>
+            <field name="tipo">6</field>
+            <field name="utensilio_ids" eval="[(6,0, [ref('cocina_utensilios_1')])]"></field>
+          </record>
+          
+
+
           <record id="cocina_ingredientes_1" model="cocina.ingredientes">
             <field name="nombre">Tomate</field>
             <field name="precio">7</field>
@@ -67,35 +171,7 @@
             <field name="alergeno">huevo</field>
           </record>
 
-          <record id="cocina_utensilios_1" model="cocina.utensilios">
-            <field name="nombre">Cuchillo</field>
-            <field name="descripcion">Cuchillo</field>
-          </record>
-
-          <record id="cocina_utensilios_2" model="cocina.utensilios">
-            <field name="nombre">Cuchara</field>
-            <field name="descripcion">Cuchara</field>
-          </record>
-
-          <record id="cocina_utensilios_3" model="cocina.utensilios">
-            <field name="nombre">Sarten</field>
-            <field name="descripcion">Sarten</field>
-          </record>
-
-          <record id="cocina_utensilios_4" model="cocina.utensilios">
-            <field name="nombre">Tabla</field>
-            <field name="descripcion">Tabla para cortar</field>
-          </record>
-
-          <record id="cocina_utensilios_5" model="cocina.utensilios">
-            <field name="nombre">Fogon</field>
-            <field name="descripcion">Fuego para poner la sarten</field>
-          </record>
-
-          <record id="cocina_utensilios_6" model="cocina.utensilios">
-            <field name="nombre">Paleta</field>
-            <field name="descripcion">Paleta para remover</field>
-          </record>
+         
 
     </data>
 </odoo>
