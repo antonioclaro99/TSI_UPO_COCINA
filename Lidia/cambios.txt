@@ -1,0 +1,10 @@
+en aulas:
+puestos_ids = fields.Many2many("cocina.puestos",string="Lista de puestos")
+
+     @api.constrains('puestos_ids')
+     def capacidad(self):
+        for aula in self:
+             if len(aula.puestos_ids) > aula.capacidadMax:
+                  mensaje = "La capacidad maxima es de " + str(aula.capacidadMax) + " puestos"
+                  raise models.ValidationError(mensaje)
+                  
