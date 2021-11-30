@@ -1,0 +1,74 @@
+<odoo>
+    <data>
+
+          <record id="cocina_lineaingrediente_1" model="cocina.lineaingrediente">
+            <field name="ingrediente_id" eval="ref('cocina_ingredientes_1')"/>
+            <field name="cantidad">2</field>
+          </record>
+
+          <record id="cocina_lineaingrediente_2" model="cocina.lineaingrediente">
+            <field name="ingrediente_id" eval="ref('cocina_ingredientes_2')"/>
+            <field name="cantidad">0,5</field>
+          </record>
+
+          <record id="cocina_lineaingrediente_3" model="cocina.lineaingrediente">
+            <field name="ingrediente_id" eval="ref('cocina_ingredientes_3')"/>
+            <field name="cantidad">1</field>
+          </record>
+
+          <record id="cocina_lineaingrediente_4" model="cocina.lineaingrediente">
+            <field name="ingrediente_id" eval="ref('cocina_ingredientes_4')"/>
+            <field name="cantidad">1,5</field>
+          </record>
+
+          <record id="cocina_lineaingrediente_5" model="cocina.lineaingrediente">
+            <field name="ingrediente_id" eval="ref('cocina_ingredientes_5')"/>
+            <field name="cantidad">1,5</field>
+          </record>
+
+          <record id="cocina_lineaingrediente_6" model="cocina.lineaingrediente">
+            <field name="ingrediente_id" eval="ref('cocina_ingredientes_6')"/>
+            <field name="cantidad">3</field>
+          </record>
+
+          <record id="cocina_recetas_1" model="cocina.recetas">
+            <field name="nombre">Receta1</field>
+            <field name="descripcion">Descripcion receta 1</field>
+            <field name="duracion">40</field>
+            <field name="lineaingrediente_ids" eval="[(6, 0, [ ref('cocina_lineaingrediente_1'), ref('cocina_lineaingrediente_2')])]"/>
+          </record>
+
+          <record id="cocina_recetas_2" model="cocina.recetas">
+            <field name="nombre">Receta2</field>
+            <field name="descripcion">Descripcion receta 2</field>
+            <field name="duracion">30</field>
+            <field name="lineaingrediente_ids" eval="[(6, 0, [ ref('cocina_lineaingrediente_3'), ref('cocina_lineaingrediente_4')])]"/>
+          </record>
+
+          <record id="cocina_recetas_3" model="cocina.recetas">
+            <field name="nombre">Receta3</field>
+            <field name="descripcion">Descripcion receta 3</field>
+            <field name="duracion">90</field>
+            <field name="lineaingrediente_ids" eval="[(6, 0, [ ref('cocina_lineaingrediente_1'), ref('cocina_lineaingrediente_4'), ref('cocina_lineaingrediente_6')])]"/>
+          </record>
+
+          <record id="cocina_cursos_1" model="cocina.cursos">
+            <field name="nombre">Curso1</field>
+            <field name="tipo">lactosa</field>
+            <field name="recetas_ids" eval="[(6, 0, [ ref('cocina_recetas_2'), ref('cocina_recetas_3')])]"/>
+          </record>
+
+          <record id="cocina_cursos_2" model="cocina.cursos">
+            <field name="nombre">Curso2</field>
+            <field name="tipo">gluten</field>
+            <field name="recetas_ids" eval="[(6, 0, [ ref('cocina_recetas_1'), ref('cocina_recetas_3')])]"/>
+          </record>
+
+          <record id="cocina_cursos_3" model="cocina.cursos">
+            <field name="nombre">Curso3</field>
+            <field name="tipo">marisco</field>
+            <field name="recetas_ids" eval="[(6, 0, [ ref('cocina_recetas_1'), ref('cocina_recetas_2')])]"/>
+          </record>
+
+    </data>
+</odoo>
