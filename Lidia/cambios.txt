@@ -8,3 +8,8 @@ puestos_ids = fields.Many2many("cocina.puestos",string="Lista de puestos")
                   mensaje = "La capacidad maxima es de " + str(aula.capacidadMax) + " puestos"
                   raise models.ValidationError(mensaje)
                   
+
+_rec_name='nombreClase'
+_sql_constraints = [('clases_nombreClase_unique','UNIQUE (nombreClase)','El nombreClase debe ser único')]
+
+<field name="generico"></field>

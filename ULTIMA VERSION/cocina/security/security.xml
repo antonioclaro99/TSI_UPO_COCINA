@@ -1,0 +1,5 @@
+<odoo>
+    <record id="group_cocina_manager" model="res.groups">
+        <field name="name">cocina / Manager</field>
+    </record>
+</odoo>
