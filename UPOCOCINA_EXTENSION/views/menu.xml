@@ -1,6 +1,0 @@
-<odoo>
-
-  <!-- actions -->
-  <menuitem name="Materiales" id="materiales_menu" parent="gym.gym_menu" groups="group_gym_manager" action="materiales_list_action"/>
-  
-</odoo>
