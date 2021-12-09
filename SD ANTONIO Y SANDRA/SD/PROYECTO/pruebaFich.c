@@ -8,10 +8,10 @@
 int main(int argc, char *argv[])
 {
 
-    FILE * fh;
+    MPI_File  fh;
     int pid, prn;
 
-    float datos[24;]
+    float datos[24];
 
     MPI_Init(&argc, &argv);
 
@@ -29,12 +29,12 @@ int main(int argc, char *argv[])
     disp = 2 * sizeof(int);
     etype = MPI_FLOAT;
     MPI_File_open(MPI_COMM_WORLD, "./datos_1X.txt",
-                  MPI_MODE_RD, MPI_INFO_NULL, &fh);
+                  MPI_MODE_RDWR, MPI_INFO_NULL, &fh);
     MPI_File_set_view(fh, disp, etype, filetype, "native",
                       MPI_INFO_NULL);
-    MPI_File_read(fh, buf, 24*sizeof(float), MPI_FLOAT, MPI_STATUS_IGNORE);
+    MPI_File_read(fh, datos, 24*sizeof(float), MPI_FLOAT, MPI_STATUS_IGNORE);
 
-    for (size_t i = 0; i < count; i++)
+    for (size_t i = 0; i < 24; i++)
     {
         printf("\nProceso[%d]: %5.2f \n",pid,datos[i]);
     }
