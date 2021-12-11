@@ -1,7 +1,0 @@
-<odoo>
-
-  <!-- actions -->
-  <menuitem name="Alumnos" id="alumnos_menu" parent="cocina.cocina_menu" groups="group_cocinaextension_manager" action="alumnos_list_action"/>
-  <menuitem name="Chefs" id="chefs_menu" parent="cocina.cocina_menu" groups="group_cocinaextension_manager" action="chefs_list_action"/>
-
-</odoo>
